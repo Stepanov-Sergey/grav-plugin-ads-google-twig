@@ -15,7 +15,7 @@ class GalleryPlugin extends Plugin
      */
     public function onTwigExtensions()
     {
-        require_once(__DIR__ . '/adsgoogletwigext.php');
+        require_once(__DIR__ . '/extension.php');
         $this->grav['twig']->twig->addExtension(new adsgoogletwig()); 
     }
 }
