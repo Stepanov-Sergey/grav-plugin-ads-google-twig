@@ -1,1 +1,29 @@
 
+name: Gallery
+version: 0.0.1
+description: Google ads - easy to insert in any place of content
+icon: plug
+author:
+  name: Sergey Stepanov
+  email: sergey.stepanov@lenta.ru
+homepage: https://github.com/Stepanov-Sergey/grav-plugin-ads-google-twig
+demo: http://webmaster.page4biz.ru
+keywords: ads, google
+bugs: https://github.com/Stepanov-Sergey/grav-plugin-ads-google-twig/issues
+docs: https://github.com/Stepanov-Sergey/grav-plugin-ads-google-twig/blob/master/README.md
+
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
